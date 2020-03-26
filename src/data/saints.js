@@ -15,7 +15,7 @@ let data = [
   },
   {
     id: 3,
-    name: 'St. Agustine',
+    name: 'St. Augustine',
     feastday: 'August 28',
     notable:
       'Patron Saint against sore eyes, against vermin, brewers, printers, and theologians',

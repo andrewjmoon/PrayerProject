@@ -34,8 +34,8 @@ html {
   list-style-type: none;
 }
 .Input {
-  width: 20%;
-  height: 30px;
+  width: 35%;
+  height: 25px;
   border: 2px solid red;
   border-radius: 4px;
 }
