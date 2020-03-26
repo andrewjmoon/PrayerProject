@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   paper: {
-    maxWidth: 650,
+    maxWidth: 800,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
     backgroundColor: 'lightblue'
@@ -69,7 +69,7 @@ const PostList = () => {
                     justify="center"
                     className={classes.root}
                   >
-                    <b>Title: {a.title}</b>
+                    <h2>Title: {a.title}</h2>
                   </ListItem>
                   <hr />
                   <br />
