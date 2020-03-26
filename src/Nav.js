@@ -70,7 +70,7 @@ export default function ButtonAppBar(side) {
               Home
             </Link>
           </Typography>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant="h6" className={classes.title}>
             The Prayer Project
           </Typography>
           <IconButton

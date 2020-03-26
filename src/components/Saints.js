@@ -11,7 +11,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    padding: theme.spacing(0, 3),
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center'
