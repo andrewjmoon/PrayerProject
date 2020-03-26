@@ -14,8 +14,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(0, 3),
     alignItems: 'center',
     justifyContent: 'center',
-    textAlign: 'center',
-    transform: "scale(0.8)",
+    textAlign: 'center'
   },
   paper: {
     maxWidth: 800,
@@ -59,7 +58,6 @@ const PostList = () => {
               className={classes.paper}
             >
               <Grid
-              item xs={20}
                 container
                 spacing={0}
                 direction="column"
