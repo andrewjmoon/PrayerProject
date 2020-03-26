@@ -6,8 +6,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+th {
+  text-align: center;
+  border: 1px solid black;
+  background: #018ded;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+  padding: 40px;
+}
+html {
+  background-color: lightgreen;
+}
+.Link {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}
+.Input {
+  width: 20%;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 4px;
 }
