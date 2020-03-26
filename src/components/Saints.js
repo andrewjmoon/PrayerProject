@@ -57,10 +57,10 @@ function Mysteries() {
           >
             <List className={classes.root} key={a.id}>
               <ListItem variant="h1" justify="center" className={classes.root}>
-                Name: {a.name}
+                <b>Name: {a.name}</b>
               </ListItem>
               <ListItem variant="h3" justify="center" className={classes.root}>
-                Feast Day: {a.feastday}
+                <b>Feast Day: {a.feastday}</b>
               </ListItem>
               <ListItem variant="h3" justify="center" className={classes.root}>
                 <b>Notable- {a.notable}</b>
