@@ -46,6 +46,7 @@ const PostList = () => {
           value={term}
         />
       </form>
+      
       <div>
         {/* {this.state.post.filter(search(this.state.term)).map((a) =>{ */}
         {prayer.filter(search(term)).map(a => {

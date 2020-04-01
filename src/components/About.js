@@ -8,7 +8,8 @@ export default () => {
       people. The prayerlist page contains a search bar that allows the users to
       search by the saint's first name. There is also a page that provides
       additional information about the saints including feast days and
-      Patronage.
+      Patronage. See the list of Saint's page to see the available prayers in
+      the Prayer List page.
     </div>
   );
 };
