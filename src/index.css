@@ -33,6 +33,12 @@ html {
   text-align: center;
   list-style-type: none;
 }
+.Link2 {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}
 .Input {
   width: 35%;
   height: 25px;

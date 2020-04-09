@@ -12,7 +12,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E20 90%)',
     borderRadius: 3,
@@ -20,32 +20,32 @@ const useStyles = makeStyles(theme => ({
     color: 'white',
     height: 60,
     padding: '0 30px',
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   menuButton: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   hide: {
-    display: 'none'
+    display: 'none',
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0
+    flexShrink: 0,
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: 'lightgreen'
+    backgroundColor: 'lightgreen',
   },
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
     padding: '0 8px',
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-end'
-  }
+    justifyContent: 'flex-end',
+  },
 }));
 
 export default function ButtonAppBar(side) {
@@ -66,7 +66,7 @@ export default function ButtonAppBar(side) {
       <AppBar className={classes.root} position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            <Link className="Link" to="/">
+            <Link className="Link2" to="/">
               Home
             </Link>
           </Typography>
@@ -91,7 +91,7 @@ export default function ButtonAppBar(side) {
         open={open}
         onClose={handleDrawerClose}
         classes={{
-          paper: classes.drawerPaper
+          paper: classes.drawerPaper,
         }}
       >
         <IconButton onClick={handleDrawerClose}>
