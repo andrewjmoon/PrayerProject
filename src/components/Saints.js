@@ -7,20 +7,20 @@ import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    alignItems: 'center',
     justifyContent: 'center',
-    textAlign: 'center'
+    textAlign: 'center',
+    display: 'block',
   },
   paper: {
     maxWidth: 500,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
-    backgroundColor: 'lightblue'
-  }
+    backgroundColor: 'lightblue',
+  },
 }));
 
 function Mysteries() {
@@ -33,7 +33,7 @@ function Mysteries() {
   const [currentData, setCurrentData] = React.useState([]);
 
   useEffect(() => {
-    fetchData().then(data => setData(data));
+    fetchData().then((data) => setData(data));
   }, []);
 
   useEffect(() => {
@@ -42,12 +42,12 @@ function Mysteries() {
 
   return (
     <div className="App">
-      {currentData.map(a => (
+      {currentData.map((a) => (
         <Paper
           direction="column"
-          alignItems="center"
           justify="center"
           className={classes.paper}
+          key={a.id}
         >
           <Grid
             container

@@ -7,21 +7,20 @@ import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    display: 'block'
+    display: 'block',
   },
   paper: {
     maxWidth: 800,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
-    backgroundColor: 'lightblue'
-  }
+    backgroundColor: 'lightblue',
+  },
 }));
 
 const PostList = () => {
@@ -29,7 +28,7 @@ const PostList = () => {
   //const [post, setPost] = useState('');
   const [term, setTerm] = useState('');
 
-  const searchHandler = e => {
+  const searchHandler = (e) => {
     setTerm(e.target.value); //outputs watever the input is inputted
   };
 
@@ -46,15 +45,14 @@ const PostList = () => {
           value={term}
         />
       </form>
-      
+
       <div>
         {/* {this.state.post.filter(search(this.state.term)).map((a) =>{ */}
-        {prayer.filter(search(term)).map(a => {
+        {prayer.filter(search(term)).map((a) => {
           return (
             <Paper
               key={a.id}
               direction="column"
-              alignitems="center"
               justify="center"
               className={classes.paper}
             >
